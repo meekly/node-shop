@@ -1,8 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+//import logo from '../logo.svg';
+import '../styles/App.css';
 
+import Menu from './Menu';
+import FilteredPostList from './FilteredPostList';
+import PostFilter from './PostFilter';
 
+const App = () => (
+	<div>
+	<Menu />
+	<PostFilter />
+	<FilteredPostList />
+	</div>
+);
+
+/*
 class App extends Component {
   render() {
     return (
@@ -18,5 +30,6 @@ class App extends Component {
     );
   }
 }
+*/
 
 export default App;
